@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8"></head>
+
+<body>
+<h2>JavaScript Оператори</h2>
+<p id="example11"></p>
+<p id="example12"></p>
+<p id="example13"></p>
+<!--Комп’ютерна програма — це список «інструкцій», які повинен «виконати» комп’ютер.
+У мові програмування ці команди програмування називаються операторами.
+Програма JavaScript — це список операторів програмування.
+У HTML програми JavaScript виконуються веб-браузером.-->
+
+<!--JavaScript оператори складаються з: значень(Values), операторів(Operators),
+    виразів(Expressions), ключевих слів(Keywords) і коментарів(Comments).
+    Оператори виконуються по черзі в тому ж порядку, в якому вони написані.-->
+<script>
+    let x, y, z;  // Оператор 1
+    x = 5;        // Оператор 2
+    y = 6;        // Оператор 3
+    z = x + y;    // Оператор 4
+
+    document.getElementById("example11").innerHTML = "Приклад 11.Значення z дорівнює " + z + ".";
+
+    let a, b, c;
+    a = 5; b = 6; c = a + b;
+    document.getElementById("example12").innerHTML ='Приклад 12.' +
+        'Допускається кілька операторів в одному рядку.Сума:' + c;
+
+   /* var Оголошує змінну
+    let Оголошує блочну змінну
+    const Оголошує константу блоку
+    Дефіси заборонені в JavaScript.
+     Вони зарезервовані для віднімань.
+     Ви не можете повторно оголосити змінну, оголошену за допомогою let або const, тільки var.
+    */
+
+    let person = "John Doe", carName = "Volvo", price = 200;
+    document.getElementById("example13").innerHTML = carName;
+
+</script>
+
+
+
+
+</body>
+</html>
