@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <script>
+        function myFunction() {
+            document.getElementById("example6").innerHTML = "Текст змінено!";
+        }
+        </script>
+</head>
+
+<body>
+
+<h2>Отримання елемента по id </h2>
+<!--INPUT-->
+<p>Приклад 1</p>
+<button onclick="document.getElementById('example1').src='src/img/sasuke.png'">Попереднє</button>
+<img id="example1" src="src/img/sasuke.png" style="width:100px">
+<button onclick="document.getElementById('example1').src='src/img/naruto.png'">Наступне</button>
+
+<p id="example2">Приклад 2</p>
+<button type="button" onclick="document.getElementById('example2').style.fontSize='35px'">Зміна розміру шрифту</button>
+
+<p id="example3">Приклад 3</p>
+<button type="button" onclick="document.getElementById('example3').style.display='none'">Сховати елемент!</button>
+
+<p id="example4" style="display:none">Приклад 4. Зміна тексту по кліку! </p>
+<button type="button" onclick="document.getElementById('example4').style.display='block'">Привіт!</button><br>
+
+<p id="example5">Приклад 5</p>
+<script>
+    document.getElementById("example5").innerHTML = "Мій скрипт";
+</script>
+
+<p id="example6">Приклад 6.Скрипт в хедері</p>
+<button type="button" onclick="myFunction()">Спробуй</button>
+
+<!--OUTPUT-->
+    <!--Inner Html визначає вміст html -->
+<p id = "example7">Приклад 7.Шлях до файлу</p>
+<script src="script.js"></script>
+<script>document.getElementById("example7").innerHTML = 34 + 6;
+<!--Для перевірки, тестування : -->
+document.write('Для тестування:' +(67 + 4))
+</script>
+<!--Використання document.write()
+після завантаження HTML-документа призведе
+ до видалення всіх існуючих HTML:-->
+<button type="button" onclick="document.write(36 + 236)">Сума</button>
+<!--Вікно попередження-->
+<script>
+    window.alert('Приклад 8. Вікно попередження, сума: '+ (755 * 625));
+    <!--Для налагодження. Можна знайти в консолі у панелі розробника. F12 -->
+    console.log('Приклад 9. Повідомлення для налагодження: '+(6.45 * 345.5));
+    <!--Javascript не має своїх об'єктів або методів для друку,
+    вийнятком є те що можна викликати метод вікна браузера для друку.-->
+
+</script>
+</body>
+</html>
